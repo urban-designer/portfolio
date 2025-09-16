@@ -1,6 +1,7 @@
+/* General page layout */
 body {
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 2rem;
   line-height: 1.6;
@@ -15,6 +16,7 @@ header, footer {
 
 h1, h2 {
   color: #2c3e50;
+  margin-bottom: 0.5rem;
 }
 
 a {
@@ -32,5 +34,25 @@ ul {
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
 }
