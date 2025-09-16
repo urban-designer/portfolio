@@ -42,21 +42,22 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Buttons */
+/* Buttons styled as hyperlinks */
 .button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #1d72b8;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  margin-top: 0.3rem;
+  background: none;        /* Remove background */
+  color: #1d72b8;          /* Match link color */
+  text-decoration: underline; /* Show underline like normal link */
+  padding: 0;              /* Remove padding */
+  border: none;            /* Remove border */
+  font-weight: normal;     /* Optional: normal weight */
+  cursor: pointer;         /* Pointer on hover */
+  display: inline;         /* Inline like normal text */
+  transition: color 0.3s;
 }
 
 .button:hover {
-  background-color: #155d8b;
+  color: #155d8b;          /* Darker color on hover */
+  text-decoration: underline; /* Keep underline */
 }
 
 /* Header image styling */
