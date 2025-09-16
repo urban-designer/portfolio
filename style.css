@@ -1,7 +1,7 @@
 /* General page layout */
 body {
   font-family: "Times New Roman", Times, serif;
-  max-width: 900px;
+  max-width: 900px;          /* Matches your content width */
   margin: auto;
   padding: 2rem;
   line-height: 1.6;
@@ -14,7 +14,7 @@ header, footer {
   margin-bottom: 2rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #2c3e50;
   margin-bottom: 0.5rem;
 }
@@ -42,6 +42,48 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #1d72b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 0.3rem;
+}
+
+.button:hover {
+  background-color: #155d8b;
+}
+
+/* Header image styling */
+.header-image {
+  max-width: 900px;        /* Limit width to content width */
+  margin: 0 auto 1.5rem;   /* Center + spacing below */
+}
+
+.header-image img {
+  width: 100%;             /* Fill container */
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;      /* Optional rounded corners */
+}
+
+.header-image figure {
+  margin: 0;
+}
+
+.header-image figcaption {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: left;
+  margin-top: 0.3rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   body {
@@ -55,47 +97,12 @@ section {
   h2 {
     font-size: 1.4rem;
   }
-  
+
   h3 {
     font-size: 1.2rem;
   }
-  
+
   .button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: #1d72b8;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+    padding: 0.5rem 1rem;
   }
-
-.button:hover {
-  background-color: #155d8b;
-  }
-  
-.header-image {
-  max-width: 900px;       
-  margin: 0 auto 1.2rem;  
-}
-
-.header-image img {
-  width: 100%;            
-  height: auto;           
-  object-fit: cover;      
-  display: block;         
-}
-
-.header-image figure {
-  margin: 0;             
-}
-
-.header-image figcaption {
-  font-size: 0.8rem;      
-  color: #777;            
-  text-align: left;       
-  margin-top: 0.3rem;     
-}
-  
 }
