@@ -42,24 +42,6 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Buttons styled as hyperlinks */
-.button {
-  background: none;        /* Remove background */
-  color: #1d72b8;          /* Match link color */
-  text-decoration: underline; /* Show underline like normal link */
-  padding: 0;              /* Remove padding */
-  border: none;            /* Remove border */
-  font-weight: normal;     /* Optional: normal weight */
-  cursor: pointer;         /* Pointer on hover */
-  display: inline;         /* Inline like normal text */
-  transition: color 0.3s;
-}
-
-.button:hover {
-  color: #155d8b;          /* Darker color on hover */
-  text-decoration: underline; /* Keep underline */
-}
-
 /* Header image styling */
 .header-image {
   max-width: 900px;       /* Limit container width */
