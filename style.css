@@ -61,16 +61,16 @@ section {
 
 /* Header image styling */
 .header-image {
-  max-width: 900px;        /* Limit width to content width */
-  margin: 0 auto 1.5rem;   /* Center + spacing below */
+  max-width: 900px;       /* Limit container width */
+  margin: 0 auto 1.5rem;  /* Center container */
+  padding: 0;             /* Optional */
 }
 
 .header-image img {
-  width: 100%;             /* Fill container */
+  width: 100%;            /* Fill the container, not full page */
   height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;      /* Optional rounded corners */
+  display: block;         
+  border-radius: 8px;     /* optional */
 }
 
 .header-image figure {
