@@ -76,26 +76,26 @@ section {
   }
   
 .header-image {
-  width: 100%;       
+  max-width: 900px;       
   margin: 0 auto 1.2rem;  
 }
 
 .header-image img {
-  max-width: 900px;            
+  width: 100%;            
   height: auto;           
-  max-height: 400px;      
   object-fit: cover;      
+  display: block;         
 }
 
 .header-image figure {
-  margin: 0;
+  margin: 0;             
 }
-  
+
 .header-image figcaption {
-  font-size: 0.8rem;     
-  color: #777;           
-  text-align: left;      
-  margin-top: 0.3rem;      
+  font-size: 0.8rem;      
+  color: #777;            
+  text-align: left;       
+  margin-top: 0.3rem;     
 }
   
 }
