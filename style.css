@@ -81,7 +81,7 @@ section {
 }
 
 .header-image img {
-  width: 100%;            
+  max-width: 900px;            
   height: auto;           
   max-height: 400px;      
   object-fit: cover;      
