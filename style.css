@@ -86,7 +86,7 @@ section {
   .youtube-video {
     position: relative;
     width: 100%;
-    max-width: 900px;   /* desktop: limit width */
+    max-width: 1500px;   /* desktop: limit width */
     margin: 0 auto;     /* center horizontally */
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
