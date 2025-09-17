@@ -88,4 +88,12 @@ section {
   .button {
     padding: 0.5rem 1rem;
   }
+
+  /* Video container that matches your content width and centers */
+  .media-wrap {
+    max-width: 900px;       /* same width as page content */
+    margin: 0 auto 1.5rem;  /* center + space below */
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
