@@ -20,118 +20,44 @@
 </head>
   
 <body>
-
-  <!-- Header Image -->
-  <section class="header-image">
-    <figure>
-      <img src="files/gordon-matta-clark_conical-intersect.png" alt="Gordon Matta Clark, Conical Intersect" />
-      <figcaption>Gordon Matta Clark, still from film of <a href="https://www.youtube.com/watch?v=W8_laap8y5c">Conical Intersect</a>, 1975, 18 minutes, 16mm.</figcaption>
-    </figure>
-  </section>
-
-  <!-- Main Header -->
-  <header>
-  <p>
-    <h2>Seunghu Kim</h2>
-    Urban Designer<br>
-    M.S. Architecture and Urban Design ’25<br>
-    Graduate School of Architecture, Planning and Preservation<br>
-    Columbia University<br><br>
-    Focusing on creating meaningful dialogue between humans and nature.<br>
-    Advocating that dismantling is as much a part of architecture as building.<br>
-    Embracing flux over permanence.<br>
-    <a href="files/resume_seunghu-kim.pdf">Resume</a> | 
-    <a href="files/work-samples_seunghu-kim.pdf">Work Samples</a>
-  </p>  
-  </header>
-
-  <main>
-
-    <!-- Featured Projects -->
-    <br>-
-    <section>
-      <h3>Featured Projects</h3>
-      <ul class="projects">
-        <li>
-          <strong>Daylighting Democracy: Repairing Tibbetts Brook</strong><br>
-          Framing daylighting not only as ecological repair, but also civic restoration.<br>
-          <a href="files/daylighting-democracy_seunghu-kim.pdf">daylighting-democracy.pdf</a>
-        </li>
-        <li>
-          <strong>Blue Scar</strong><br>
-          The ecological Robert Moses project.<br>
-          <a href="files/blue-scar.pdf">blue-scar.pdf</a> / 
-          <a href="https://youtu.be/4lTo7sbu1WM">blue-scar.youtube</a>
-        </li>
-        <li>
-          <strong>How to Break a City?</strong><br>
-          From dismantling cityscape to hacking infrastructure.<br>
-          <a href="https://www.arch.columbia.edu/urban-mag"> URBAN Magazine</a> (pp. 57-60)
-        </li>
-        <li>
-          <strong>Deproblematizing Flooding by Problematizing the Waterfront</strong><br>
-          GIS-based analysis of waterfronts based on the notion of flooding as a human invention.<br> 
-          <a href="https://centerforspatialresearch.github.io/conflict_urbanism_sp2025/2025/05/02/Kaplan-Kim.html"> Center for Spatial Research</a>
-        </li>
-        <li>
-          <strong>Dreaming the Ruins</strong><br>
-          Exploring ways to surrender to coastal flooding in a purposeful manner.<br>
-          <a href="files/dreaming-the-ruins.pdf">dreaming-the-ruins.pdf</a>
-        </li>
-        <li>
-          <strong>Saemaul Undong: South Korea's New Village Movement</strong><br>
-          Analysis of Korean rural village transformation through collective action.<br>
-          <a href="files/saemaul-undong_seunghu-kim.pdf">saemaul-undong.pdf</a>
-        </li>
-      </ul>
-    </section>
-
-    <br>-
-    <!-- Marketing / Communication -->
-    <section>
-      <h3>Marketing / Communication</h3>
-      Web Design Work Sample
-      <a href="http://www.samikwindows.com/schuco/main/"> Website</a><br>
-      [ep.002] Utilizing time-based mediums to reach more audience
-      <a href="https://www.instagram.com/seunghu.arc/"> Read More</a><br>
-      [ep.003] Utilizing time-based mediums to reach more audience
-      <a href="https://www.instagram.com/seunghu.arc/"> Read More</a><br>
-    </section>
-
-    <br>-
-    <!-- Reading List -->
-    <section>
-      <h3>Reading List</h3>
-      2025<br>
-      Calvino, Italo - Invisible Cities <br>
-      Tanizaki, Junichiro - In Praise of Shadows <br>
-    </section>
+  <div class="container">
     
-
-    <br>-
-    <!-- Site Visits -->
-    <h3>Site Visits</h3>
-    <div class="youtube-video">
-    <iframe 
-      src="https://www.youtube.com/embed/EnB5-0cM6ak" 
-      title="Lantern House - Heatherwick Studio"
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-    </div>
-
-    
-    <br>-
-    <!-- Contact -->
-    <section>
-      <h3>Contact</h3>
-      <p> 
-        <a href="https://www.linkedin.com/in/seunghukim">LinkedIn</a> |  
-        sk5479@columbia.edu
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Seunghu Kim</h2>
+      <p>
+        Urban Designer<br>
+        M.S. Architecture and Urban Design ’25<br>
+        Columbia GSAPP
       </p>
-    </section>
+      <p class="tagline">
+        Focusing on creating meaningful dialogue between humans and nature.<br>
+        Advocating that dismantling is as much a part of architecture as building.<br>
+        Embracing flux over permanence.
+      </p>
+      <p>
+        <a href="files/resume_seunghu-kim.pdf" target="content">Resume</a> | 
+        <a href="files/work-samples_seunghu-kim.pdf" target="content">Work Samples</a>
+      </p>
 
-  </main>
-  
+      <nav>
+        <ul>
+          <li><a href="contents/cv.html" target="content">CV</a></li>
+          <li><a href="contents/daylighting.html" target="content">Daylighting Democracy</a></li>
+          <li><a href="contents/blue-scar.html" target="content">Blue Scar</a></li>
+          <li><a href="contents/how-to-break.html" target="content">How to Break a City?</a></li>
+          <li><a href="contents/flooding.html" target="content">Deproblematizing Flooding</a></li>
+          <li><a href="contents/dreaming.html" target="content">Dreaming the Ruins</a></li>
+          <li><a href="contents/saemaul.html" target="content">Saemaul Undong</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Content loads into iframe -->
+    <main class="content">
+      <iframe name="content" src="contents/cv.html" frameborder="0"></iframe>
+    </main>
+
+  </div>
 </body>
 </html>
