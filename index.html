@@ -8,44 +8,48 @@
   <link rel="icon" type="image/jpg" href="files/favicon.jpg">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQX7PRPHYS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XQX7PRPHYS');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQX7PRPHYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XQX7PRPHYS');
+  </script>
 </head>
-  
+
 <body>
+  <div class="container">
 
-  <h1>Seunghu Kim</h1>
-  <h2>Urban Designer<br>
-      M.S. Architecture and Urban Design ’25<br>
-      Columbia GSAPP</h2>
+    <!-- Left column -->
+    <aside class="sidebar">
+      <h1>Seunghu Kim</h1>
+      <h2>Urban Designer<br>
+          M.S. Architecture and Urban Design ’25<br>
+          Columbia GSAPP</h2>
 
-  <p>
-      Focusing on creating meaningful dialogue between humans and nature. <br>
-      Advocating that dismantling is as much a part of architecture as building. <br>
-      Embracing flux over permanence.
-  </p>
+      <p>
+        Focusing on creating meaningful dialogue between humans and nature. <br>
+        Advocating that dismantling is as much a part of architecture as building. <br>
+        Embracing flux over permanence.
+      </p>
 
-  <div class="links">
-    <a href="contents/resume.html">Resume</a> |
-    <a href="#">Work Samples</a> <br>
-    <a href="#">Daylighting Democracy</a> <br>
-    <a href="#">Blue Scar</a> <br>
-    <a href="#">How to Break a City?</a> <br>
-    <a href="#">Deproblematizing Flooding</a> <br>
-    <a href="#">Dreaming the Ruins</a> <br>
-    <a href="#">Saemaul Undong</a>
+      <nav class="links">
+        <a href="contents/resume.html" target="content-frame">Resume</a><br>
+        <a href="#" target="content-frame">Work Samples</a><br>
+        <a href="#" target="content-frame">Daylighting Democracy</a><br>
+        <a href="#" target="content-frame">Blue Scar</a><br>
+        <a href="#" target="content-frame">How to Break a City?</a><br>
+        <a href="#" target="content-frame">Deproblematizing Flooding</a><br>
+        <a href="#" target="content-frame">Dreaming the Ruins</a><br>
+        <a href="#" target="content-frame">Saemaul Undong</a>
+      </nav>
+    </aside>
+
+    <!-- Right column -->
+    <main class="content">
+      <iframe name="content-frame" src="resume.pdf"></iframe>
+    </main>
+
   </div>
-
-  <div class="preview">
-    <iframe src="resume.pdf"></iframe>
-  </div>
-
 </body>
 </html>
