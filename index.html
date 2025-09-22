@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/jpg" href="files/favicon.jpg">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQX7PRPHYS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,12 +16,13 @@
     gtag('config', 'G-XQX7PRPHYS');
   </script>
 </head>
-
+  
 <body>
+
   <div class="container">
 
-    <!-- Left column -->
-    <aside class="sidebar">
+    <!-- LEFT COLUMN -->
+    <aside class="left">
       <h1>Seunghu Kim</h1>
       <h2>Urban Designer<br>
           M.S. Architecture and Urban Design ’25<br>
@@ -34,22 +35,25 @@
       </p>
 
       <nav class="links">
-        <a href="contents/resume.html" target="content-frame">Resume</a><br>
-        <a href="#" target="content-frame">Work Samples</a><br>
-        <a href="#" target="content-frame">Daylighting Democracy</a><br>
-        <a href="#" target="content-frame">Blue Scar</a><br>
-        <a href="#" target="content-frame">How to Break a City?</a><br>
-        <a href="#" target="content-frame">Deproblematizing Flooding</a><br>
-        <a href="#" target="content-frame">Dreaming the Ruins</a><br>
-        <a href="#" target="content-frame">Saemaul Undong</a>
+        <a href="contents/resume.html" target="preview-frame">Resume</a><br>
+        <a href="contents/work-samples.html" target="preview-frame">Work Samples</a><br>
+        <a href="contents/daylighting.html" target="preview-frame">Daylighting Democracy</a><br>
+        <a href="contents/blue-scar.html" target="preview-frame">Blue Scar</a><br>
+        <a href="contents/break-city.html" target="preview-frame">How to Break a City?</a><br>
+        <a href="contents/flooding.html" target="preview-frame">Deproblematizing Flooding</a><br>
+        <a href="contents/dreaming.html" target="preview-frame">Dreaming the Ruins</a><br>
+        <a href="contents/saemaul.html" target="preview-frame">Saemaul Undong</a>
       </nav>
     </aside>
 
-    <!-- Right column -->
-    <main class="content">
-      <iframe name="content-frame" src="resume.pdf"></iframe>
+    <!-- RIGHT COLUMN -->
+    <main class="right">
+      <div class="preview">
+        <iframe src="resume.pdf" name="preview-frame"></iframe>
+      </div>
     </main>
 
   </div>
+
 </body>
 </html>
