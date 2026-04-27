@@ -1,7 +1,11 @@
-/* General page layout */
+/* Base setup */
+html {
+  font-size: 14px; /* controls overall scale */
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
-  max-width: 900px;          /* Matches your content width */
+  max-width: 900px;
   margin: auto;
   padding: 2rem;
   line-height: 1.6;
@@ -9,16 +13,31 @@ body {
   color: #333;
 }
 
+/* Structure */
 header, footer {
   text-align: left;
   margin-bottom: 2rem;
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
+/* Typography */
 h1, h2, h3 {
   color: #2c3e50;
   margin-bottom: 0.5rem;
 }
 
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.1rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
 a {
   color: #1d72b8;
   text-decoration: none;
@@ -28,32 +47,27 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Lists */
 ul {
   list-style: none;
   padding-left: 0;
 }
 
 li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
-}
-
-/* Header image styling */
+/* Header image */
 .header-image {
-  max-width: 900px;       /* Limit container width */
-  margin: 0 auto 1.5rem;  /* Center container */
-  padding: 0;             /* Optional */
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
 }
 
 .header-image img {
-  width: 100%;            /* Fill the container, not full page */
+  width: 100%;
   height: auto;
-  display: block;         
-  border-radius: 8px;     /* optional */
+  display: block;
+  border-radius: 8px;
 }
 
 .header-image figure {
@@ -61,55 +75,46 @@ section {
 }
 
 .header-image figcaption {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #777;
-  text-align: left;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
 }
 
-  h1 {
-    font-size: 1.8rem;
-  }
+/* Buttons */
+.button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
 
-  h2 {
-    font-size: 1.4rem;
-  }
+/* YouTube embed */
+.youtube-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
 
-  h3 {
-    font-size: 1.2rem;
-  }
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
 
-  .button {
-    padding: 0.5rem 1rem;
+/* Mobile */
+@media (max-width: 600px) {
+  html {
+    font-size: 13px; /* slightly smaller on mobile */
   }
 
   .youtube-video {
-    position: relative;
-    width: 100%;
-    max-width: 1500px;   /* desktop: limit width */
-    margin: 0 auto;     /* center horizontally */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
   }
-
-  .youtube-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 8px; /* optional */
-  }
-
-  /* On mobile: let it span full width */
-  @media (max-width: 600px) {
-    .youtube-video {
-      max-width: 100%;
-      margin: 0;
-    }
-  }
-
-  
 }
