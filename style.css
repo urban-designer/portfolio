@@ -109,9 +109,9 @@ li {
 }
 
 .image-caption {
-  font-size: 0.75rem !important;
-  color: #777 !important;
-  margin-top: 0.2rem !important;
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 0.1rem;
 }
 
 /* Mobile */
