@@ -108,6 +108,12 @@ li {
   border-radius: 8px;
 }
 
+.image-caption {
+  font-size: 0.75rem !important;
+  color: #777 !important;
+  margin-top: 0.2rem !important;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   html {
