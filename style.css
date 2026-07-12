@@ -74,7 +74,8 @@ li {
   margin: 0;
 }
 
-.header-image figcaption {
+.header-image figcaption,
+.image-caption {
   font-size: 0.75rem;
   color: #777;
   margin-top: 0.2rem;
@@ -110,7 +111,7 @@ li {
 /* Mobile */
 @media (max-width: 600px) {
   html {
-    font-size: 13px; /* slightly smaller on mobile */
+    font-size: 13px;
   }
 
   .youtube-video {
