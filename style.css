@@ -114,12 +114,9 @@ li {
   border-radius: 8px;
 }
 
-/* Two columns: Featured Projects | Reading List */
+/* Sections stack: Featured Projects, Reading List, Contact */
 .portfolio-layout {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 3rem;
-  align-items: start;
+  display: block;
 }
 
 .portfolio-layout > section {
@@ -133,88 +130,44 @@ li {
   display: block;
 }
 
-/* Contact spans both columns below the other sections */
-.portfolio-layout > .contact {
-  grid-column: 1 / -1;
+/* Each section has its own two-column layout */
+.projects,
+.reading-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 1.2rem;
+  align-items: start;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  html {
-    font-size: 13px;
-  }
-
-  .portfolio-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .youtube-video {
-    max-width: 100%;
-    margin: 0;
-  }
+.projects > li {
+  min-width: 0;
+  margin-bottom: 0;
 }
 
-.header-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
+.reading-columns {
+  margin-top: 1.5rem;
 }
 
-.header-image figure {
+.reading-year {
+  min-width: 0;
+}
+
+.year-label,
+.reading-year ul,
+.reading-year li {
   margin: 0;
 }
 
-.header-image figcaption,
-.image-caption {
-  font-size: 0.75rem;
-  color: #777;
-  margin-top: -0.2rem;
-}
-
-/* Buttons */
-.button {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-}
-
-/* YouTube embed */
-.youtube-video {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.youtube-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 8px;
-}
-
-.image-caption {
-  font-size: 0.75rem;
-  color: #777;
-  margin-top: -0.5rem;
-}
-
-.caption {
-  font-size: 1rem;
-  color: #777;
-  margin-top: -0.5rem;
-}
-
 /* Mobile */
 @media (max-width: 600px) {
   html {
     font-size: 13px;
+  }
+
+  .projects,
+  .reading-columns {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .youtube-video {
