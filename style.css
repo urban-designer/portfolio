@@ -1,6 +1,6 @@
 /* Base setup */
 html {
-  font-size: 14px; /* controls overall scale */
+  font-size: 14px;
 }
 
 body {
@@ -32,15 +32,13 @@ h1, h2, h3 {
 h1 { font-size: 1.6rem; }
 h2 { font-size: 1.3rem; }
 h3 { font-size: 1.1rem; }
-
-p {
-  margin-bottom: 1rem;
-}
+p { margin-bottom: 1rem; }
 
 /* Links */
 a {
   color: #1d72b8;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 a:hover {
@@ -61,6 +59,99 @@ li {
 .header-image {
   max-width: 900px;
   margin: 0 auto 1.5rem;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.header-image figure {
+  margin: 0;
+}
+
+.header-image figcaption,
+.image-caption {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.header-image figcaption { margin-top: -0.2rem; }
+.image-caption { margin-top: -0.5rem; }
+
+.caption {
+  font-size: 1rem;
+  color: #777;
+  margin-top: -0.5rem;
+}
+
+/* Buttons */
+.button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* YouTube embed */
+.youtube-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Two columns: Featured Projects | Reading List */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  align-items: start;
+}
+
+.portfolio-layout > section {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Keep the original dash above each section */
+.portfolio-layout > section::before {
+  content: "-";
+  display: block;
+}
+
+/* Contact spans both columns below the other sections */
+.portfolio-layout > .contact {
+  grid-column: 1 / -1;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+
+  .portfolio-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .youtube-video {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .header-image img {
