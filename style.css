@@ -34,12 +34,6 @@ h2 { font-size: 1.3rem; }
 h3 { font-size: 1.1rem; }
 p { margin-bottom: 1rem; }
 
-/* Korean font */
-:lang(ko) {
-  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  word-break: keep-all;
-}
-
 /* Links */
 a {
   color: #1d72b8;
@@ -146,7 +140,7 @@ li {
   display: block;
 }
 
-/* Project and publication rows: text left, links right */
+/* Project and publication rows */
 .content-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -178,18 +172,23 @@ li {
   margin-bottom: 1.5rem;
 }
 
-/* Links inside the right column */
+/* Right-align project and publication links */
+.item-links {
+  text-align: right;
+}
+
 .item-links a {
   display: block;
   width: fit-content;
   max-width: 100%;
+  margin-left: auto;
 }
 
 .item-links a + a {
   margin-top: 0.2rem;
 }
 
-/* Publication date and source beneath each title */
+/* Publication date and source */
 .item-text .publication-meta {
   margin-top: 0.2rem;
   color: #777;
@@ -216,13 +215,10 @@ li {
   margin: 0;
 }
 
-/* Contact */
-.contact-row {
-  margin-top: 1rem;
-}
-
-.contact-row h3 {
-  margin: 0;
+/* Contact stays in the left column */
+.contact-details {
+  max-width: calc((100% - 3rem) / 2);
+  text-align: left;
 }
 
 /* Mobile */
@@ -234,6 +230,10 @@ li {
   .content-row,
   .reading-columns {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-details {
+    max-width: none;
   }
 
   .youtube-video {
