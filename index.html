@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seunghu Kim | Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=20260919-3">
+  <link rel="stylesheet" href="style.css?v=20261021-1">
   <link rel="icon" type="image/jpg" href="files/favicon.jpg">
 
   <!-- Google tag (gtag.js) -->
@@ -13,7 +13,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-XQX7PRPHYS');
   </script>
 </head>
@@ -21,14 +20,20 @@
 <body>
 
   <!-- Header Image -->
-  <section class="header-image">
+  <section class="header-image" aria-label="Header image">
     <figure>
-      <img src="files/gordon-matta-clark_conical-intersect.png" alt="Gordon Matta Clark, Conical Intersect" />
+      <img
+        src="files/gordon-matta-clark_conical-intersect.png"
+        alt="Gordon Matta Clark, Conical Intersect"
+      >
       <figcaption>
-        Gordon Matta Clark, still from film of 
-        <a href="https://www.youtube.com/watch?v=W8_laap8y5c">
-          Conical Intersect
-        </a>, 1975, 18 minutes, 16mm.
+        Gordon Matta Clark, still from film of
+        <a
+          href="https://www.youtube.com/watch?v=W8_laap8y5c"
+          target="_blank"
+          rel="noopener"
+        >Conical Intersect</a>,
+        1975, 18 minutes, 16mm.
       </figcaption>
     </figure>
   </section>
@@ -37,151 +42,274 @@
   <header>
     <h2>Seunghu Kim</h2>
     <div class="caption">Urban Designer</div>
-    <br><br>
-    <p>
-      Building a dialog with nature.<br>
-      Embracing flux over permanence.<br>
-      <a href="files/resume_seunghu-kim.pdf" target="_blank" rel="noopener">Resume</a> /
-      <a href="files/portfolio_seunghu-kim.pdf" target="_blank" rel="noopener">Portfolio</a>
-    </p>
+
+    <div class="content-row intro-row">
+      <p>
+        Building a dialog with nature.<br>
+        Embracing flux over permanence.
+      </p>
+
+      <div class="item-links">
+        <a
+          href="files/resume_seunghu-kim.pdf"
+          target="_blank"
+          rel="noopener"
+        >Resume</a>
+        <a
+          href="files/portfolio_seunghu-kim.pdf"
+          target="_blank"
+          rel="noopener"
+        >Portfolio</a>
+      </div>
+    </div>
   </header>
 
   <main class="portfolio-layout">
 
-    <section>
-      <h3>Featured Projects</h3>
+    <!-- Featured Projects -->
+    <section aria-labelledby="projects-heading">
+      <h3 id="projects-heading">Featured Projects</h3>
 
-      <ul class="projects">
-
-        <li>
-          <strong>Dreaming the Ruins</strong><br>
-          Exploring ways to surrender to coastal flooding in a purposeful manner.<br>
-          <a href="files/dreaming-the-ruins.pdf" target="_blank" rel="noopener">
-            dreaming-the-ruins.pdf
-          </a>
+      <ul class="projects" role="list">
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Dreaming the Ruins</strong>
+            <p>
+              Exploring ways to surrender to coastal flooding in a purposeful manner.
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/dreaming-the-ruins.pdf"
+              target="_blank"
+              rel="noopener"
+            >dreaming-the-ruins.pdf</a>
+          </div>
         </li>
 
-        <li>
-          <strong>Blue Scar</strong><br>
-          Dismantling frequently flooding neighborhood.<br>
-          <a href="files/blue-scar.pdf" target="_blank" rel="noopener">
-            blue-scar.pdf
-          </a> /
-          <a href="https://youtu.be/4lTo7sbu1WM" target="_blank">
-            blue-scar.youtube
-          </a>
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Blue Scar</strong>
+            <p>Dismantling frequently flooding neighborhood.</p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/blue-scar.pdf"
+              target="_blank"
+              rel="noopener"
+            >blue-scar.pdf</a>
+            <a
+              href="https://youtu.be/4lTo7sbu1WM"
+              target="_blank"
+              rel="noopener"
+            >blue-scar.youtube</a>
+          </div>
         </li>
 
-        <li>
-          <strong>How to Break a City?</strong><br>
-          From dismantling cityscape to hacking infrastructure.<br>
-          <a href="files/how-to-break-a-city.pdf" target="_blank" rel="noopener">
-            how-to-break-a-city.pdf
-          </a> /
-          <a href="https://www.arch.columbia.edu/urban-mag" target="_blank">
-            URBAN Magazine Vol. 35
-          </a> (pp. 57-60)
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Deproblematizing Flooding by Problematizing the Waterfront</strong>
+            <p>
+              GIS-based analysis of waterfronts based on the notion of flooding as a human invention.
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="https://centerforspatialresearch.github.io/conflict_urbanism_sp2025/2025/05/02/Kaplan-Kim.html"
+              target="_blank"
+              rel="noopener"
+            >Center for Spatial Research</a>
+          </div>
         </li>
 
-         <li>
-          <strong>Time through Color, Color through Time</strong><br>
-          Silvered by Sun.<br>
-          <a href="files/time-through-color-color-through-time.pdf" target="_blank" rel="noopener">
-            time-through-color-color-through-time.pdf
-          </a> /
-          <a href="https://www.arch.columbia.edu/urban-mag" target="_blank">
-            URBAN Magazine Vol. 36
-          </a> (pp. 18-21)
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Atrapanieblas - Fogcatcher</strong>
+            <p>
+              Low-Tech fogcatcher device that captures water from coastal fog in Chile.
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/atrapanieblas.pdf"
+              target="_blank"
+              rel="noopener"
+            >atrapanieblas.pdf</a>
+          </div>
         </li>
 
-        <li>
-          <strong>Deproblematizing Flooding by Problematizing the Waterfront</strong><br>
-          GIS-based analysis of waterfronts based on the notion of flooding as a human invention.<br>
-          <a href="https://centerforspatialresearch.github.io/conflict_urbanism_sp2025/2025/05/02/Kaplan-Kim.html" target="_blank">
-            Center for Spatial Research
-          </a>
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Daylighting Democracy: Repairing Tibbetts Brook</strong>
+            <p>
+              Framing daylighting not only as ecological repair, but also civic restoration.
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/daylighting-democracy_seunghu-kim.pdf"
+              target="_blank"
+              rel="noopener"
+            >daylighting-democracy.pdf</a>
+          </div>
         </li>
 
-        <li>
-          <strong>Atrapanieblas - Fogcatcher</strong><br>
-          Low-Tech fogcatcher device that captures water from coastal fog in Chile.<br>
-          <a href="files/atrapanieblas.pdf" target="_blank" rel="noopener">
-            atrapanieblas.pdf
-          </a>
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Saemaul Undong: South Korea's New Village Movement</strong>
+            <p>
+              Analysis of Korean rural village transformation through collective action.
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/saemaul-undong_seunghu-kim.pdf"
+              target="_blank"
+              rel="noopener"
+            >saemaul-undong.pdf</a>
+          </div>
         </li>
-
-        <li>
-          <strong>Daylighting Democracy: Repairing Tibbetts Brook</strong><br>
-          Framing daylighting not only as ecological repair, but also civic restoration.<br>
-          <a href="files/daylighting-democracy_seunghu-kim.pdf" target="_blank" rel="noopener">
-            daylighting-democracy.pdf
-          </a>
-        </li>
-
-        <li>
-          <strong>Saemaul Undong: South Korea's New Village Movement</strong><br>
-          Analysis of Korean rural village transformation through collective action.<br>
-          <a href="files/saemaul-undong_seunghu-kim.pdf" target="_blank" rel="noopener">
-            saemaul-undong.pdf
-          </a>
-        </li>
-
       </ul>
     </section>
 
-    <section>
-      <h3>Reading List</h3>
+    <!-- Publications -->
+    <section aria-labelledby="publications-heading">
+      <h3 id="publications-heading">Publications</h3>
 
-      <div class="image-caption">
-        In the order of reading
-      </div>
+      <ul class="publications" role="list">
+        <li class="content-row">
+          <div class="item-text">
+            <strong lang="ko">도시도 가지치기가 필요하다</strong>
+            <p class="publication-meta">
+              Namu Newspaper <span lang="ko">나무신문</span> ·
+              <time datetime="2026-10">October 2026</time>
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="https://www.imwood.co.kr/news/articleView.html?idxno=41951"
+              target="_blank"
+              rel="noopener"
+            >Read article (Korean)</a>
+          </div>
+        </li>
 
-      <div class="reading-columns">
-        <div class="reading-year">
-          <p class="year-label">2026</p>
-          <ul>
-            <li>Columbia University Press - Everlasting Plastics</li>
-            <li>Reinier de Graaf - Architect, Verb</li>
-            <li>Rem Koolhaas, Hal Foster - Junkspace with Running Room</li>
-            <li>Ken Thompson - Compost: The Natural Way to Make Food for Your Garden</li>
-            <li>Pier Vittorio Aureli - Interviewed by 0300TV</li>
-            <li>KOSMOS Architects - Temporary Tecture: Structures of Necessity</li>
-            <li>Adrian George - The Curator's Handbook</li>
-          </ul>
+        <li class="content-row">
+          <div class="item-text">
+            <strong lang="ko">나무의 회색에는 시간이 있다</strong>
+            <p class="publication-meta">
+              Namu Newspaper <span lang="ko">나무신문</span> ·
+              <time datetime="2026-09">September 2026</time>
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="https://www.imwood.co.kr/news/articleView.html?idxno=41711"
+              target="_blank"
+              rel="noopener"
+            >Read article (Korean)</a>
+          </div>
+        </li>
+
+        <li class="content-row">
+          <div class="item-text">
+            <strong>Time through Color, Color through Time</strong>
+            <p>Silvered by Sun.</p>
+            <p class="publication-meta">
+              URBAN Magazine · Vol. 36 · pp. 18–21
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/time-through-color-color-through-time.pdf"
+              target="_blank"
+              rel="noopener"
+            >time-through-color-color-through-time.pdf</a>
+            <a
+              href="https://www.arch.columbia.edu/urban-mag"
+              target="_blank"
+              rel="noopener"
+            >URBAN Magazine Vol. 36</a>
+          </div>
+        </li>
+
+        <li class="content-row">
+          <div class="item-text">
+            <strong>How to Break a City?</strong>
+            <p>From dismantling cityscape to hacking infrastructure.</p>
+            <p class="publication-meta">
+              URBAN Magazine · Vol. 35 · pp. 57–60
+            </p>
+          </div>
+          <div class="item-links">
+            <a
+              href="files/how-to-break-a-city.pdf"
+              target="_blank"
+              rel="noopener"
+            >how-to-break-a-city.pdf</a>
+            <a
+              href="https://www.arch.columbia.edu/urban-mag"
+              target="_blank"
+              rel="noopener"
+            >URBAN Magazine Vol. 35</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Reading List -->
+    <section aria-labelledby="reading-heading">
+      <h3 id="reading-heading">Reading List</h3>
+      <p class="image-caption">In the order of reading</p>
+
+      <div class="content-row reading-columns">
+        <div>
+          <div class="reading-year">
+            <p class="year-label">2026</p>
+            <ul role="list">
+              <li>Columbia University Press - Everlasting Plastics</li>
+              <li>Reinier de Graaf - Architect, Verb</li>
+              <li>Rem Koolhaas, Hal Foster - Junkspace with Running Room</li>
+              <li>Ken Thompson - Compost: The Natural Way to Make Food for Your Garden</li>
+              <li>Pier Vittorio Aureli - Interviewed by 0300TV</li>
+              <li>KOSMOS Architects - Temporary Tecture: Structures of Necessity</li>
+              <li>Adrian George - The Curator's Handbook</li>
+            </ul>
+          </div>
+
+          <div class="reading-year">
+            <p class="year-label">2025</p>
+            <ul role="list">
+              <li>Enrique Walker - The Ordinary: Recordings</li>
+              <li>Italo Calvino - Invisible Cities</li>
+              <li>Junichiro Tanizaki - In Praise of Shadows</li>
+              <li>William H. Whyte - The Social Life of Small Urban Spaces</li>
+              <li>Michael Meredith - Smaller Architecture</li>
+              <li>Peter Zumthro, Mari Lending - A Feeling of History</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="reading-year">
-          <p class="year-label">2025</p>
-          <ul>
-            <li>Enrique Walker - The Ordinary: Recordings</li>
-            <li>Italo Calvino - Invisible Cities</li>
-            <li>Junichiro Tanizaki - In Praise of Shadows</li>
-            <li>William H. Whyte - The Social Life of Small Urban Spaces</li>
-            <li>Michael Meredith - Smaller Architecture</li>
-            <li>Peter Zumthro, Mari Lending - A Feeling of History</li>
-          </ul>
-        </div>
       </div>
-
     </section>
 
     <!-- Contact -->
-    <section class="contact">
-      <h3>Contact</h3>
+    <section class="contact" aria-labelledby="contact-heading">
+      <div class="content-row contact-row">
+        <h3 id="contact-heading">Contact</h3>
 
-      <p>
-        <a href="https://www.linkedin.com/in/seunghukim">
-          LinkedIn
-        </a> /
-
-        <a href="mailto:seunghukim@icloud.com">
-          seunghukim@icloud.com
-        </a>
-      </p>
-
+        <div class="item-links">
+          <a
+            href="https://www.linkedin.com/in/seunghukim"
+            target="_blank"
+            rel="noopener"
+          >LinkedIn</a>
+          <a href="mailto:seunghukim@icloud.com">
+            seunghukim@icloud.com
+          </a>
+        </div>
+      </div>
     </section>
 
   </main>
-
 </body>
 </html>
