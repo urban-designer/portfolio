@@ -45,6 +45,11 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible {
+  outline: 2px solid #1d72b8;
+  outline-offset: 3px;
+}
+
 /* Lists */
 ul {
   list-style: none;
@@ -78,8 +83,13 @@ li {
   color: #777;
 }
 
-.header-image figcaption { margin-top: -0.2rem; }
-.image-caption { margin-top: -0.5rem; }
+.header-image figcaption {
+  margin-top: -0.2rem;
+}
+
+.image-caption {
+  margin-top: -0.5rem;
+}
 
 .caption {
   font-size: 1rem;
@@ -114,7 +124,7 @@ li {
   border-radius: 8px;
 }
 
-/* Sections stack: Featured Projects, Reading List, Contact */
+/* Sections stack vertically */
 .portfolio-layout {
   display: block;
 }
@@ -130,32 +140,83 @@ li {
   display: block;
 }
 
-/* Each section has its own two-column layout */
-.projects,
-.reading-columns {
+/* Text on the left, links on the right */
+.content-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 3rem;
-  row-gap: 1.2rem;
+  row-gap: 0.35rem;
   align-items: start;
 }
 
-.projects > li {
+.content-row > * {
   min-width: 0;
-  margin-bottom: 0;
 }
 
+/* Introduction */
+.intro-row {
+  margin-top: 4rem;
+}
+
+.intro-row p,
+.item-text p {
+  margin: 0;
+}
+
+.item-text strong {
+  display: block;
+}
+
+/* One entry per row */
+.projects,
+.publications {
+  display: block;
+}
+
+.projects > li,
+.publications > li {
+  margin-bottom: 1.5rem;
+}
+
+/* Links inside the right column */
+.item-links a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.item-links a + a {
+  margin-top: 0.2rem;
+}
+
+/* Publication details */
+.item-text .publication-meta {
+  margin-top: 0.2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Reading-list text stays in the left column */
 .reading-columns {
   margin-top: 1.5rem;
 }
 
-.reading-year {
-  min-width: 0;
+.reading-year + .reading-year {
+  margin-top: 1.5rem;
 }
 
 .year-label,
 .reading-year ul,
 .reading-year li {
+  margin: 0;
+}
+
+/* Contact heading left, links right */
+.contact-row {
+  margin-top: 1rem;
+}
+
+.contact-row h3 {
   margin: 0;
 }
 
@@ -165,9 +226,12 @@ li {
     font-size: 13px;
   }
 
-  .projects,
-  .reading-columns {
+  .content-row {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .intro-row {
+    margin-top: 3rem;
   }
 
   .youtube-video {
