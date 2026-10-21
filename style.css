@@ -34,6 +34,12 @@ h2 { font-size: 1.3rem; }
 h3 { font-size: 1.1rem; }
 p { margin-bottom: 1rem; }
 
+/* Korean font */
+:lang(ko) {
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  word-break: keep-all;
+}
+
 /* Links */
 a {
   color: #1d72b8;
@@ -134,13 +140,13 @@ li {
   overflow-wrap: anywhere;
 }
 
-/* Keep the original dash above each section */
+/* Original dash above each section */
 .portfolio-layout > section::before {
   content: "-";
   display: block;
 }
 
-/* Text on the left, links on the right */
+/* Project and publication rows: text left, links right */
 .content-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -153,12 +159,6 @@ li {
   min-width: 0;
 }
 
-/* Introduction */
-.intro-row {
-  margin-top: 4rem;
-}
-
-.intro-row p,
 .item-text p {
   margin: 0;
 }
@@ -189,20 +189,25 @@ li {
   margin-top: 0.2rem;
 }
 
-/* Publication details */
+/* Publication date and source beneath each title */
 .item-text .publication-meta {
   margin-top: 0.2rem;
   color: #777;
   font-size: 0.9rem;
 }
 
-/* Reading-list text stays in the left column */
+/* Reading list: 2026 left, 2025 right */
 .reading-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 1.2rem;
+  align-items: start;
   margin-top: 1.5rem;
 }
 
-.reading-year + .reading-year {
-  margin-top: 1.5rem;
+.reading-year {
+  min-width: 0;
 }
 
 .year-label,
@@ -211,7 +216,7 @@ li {
   margin: 0;
 }
 
-/* Contact heading left, links right */
+/* Contact */
 .contact-row {
   margin-top: 1rem;
 }
@@ -226,12 +231,9 @@ li {
     font-size: 13px;
   }
 
-  .content-row {
+  .content-row,
+  .reading-columns {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .intro-row {
-    margin-top: 3rem;
   }
 
   .youtube-video {
