@@ -4,12 +4,11 @@ html {
 }
 
 body {
-  font-family: "Courier Prime", "Courier New", Courier, monospace;
-  letter-spacing: 0.015em;
+  font-family: "Times New Roman", Times, serif;
   max-width: 900px;
   margin: auto;
   padding: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   background: #fdfdfd;
   color: #333;
 }
