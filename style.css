@@ -150,6 +150,8 @@ li {
 
 .item-text p {
   margin: 0;
+  color: #777;
+  font-size: 0.9rem;
 }
 
 .item-text strong {
@@ -180,12 +182,6 @@ li {
 
 .item-links a + a {
   margin-top: 0.2rem;
-}
-
-.item-text .publication-meta {
-  margin-top: 0.2rem;
-  color: #777;
-  font-size: 0.9rem;
 }
 
 /* Reading list: 2026 on the left, 2025 on the right */
